@@ -2,7 +2,7 @@
 
 ## Background
 
-In this homework assignment, I wrote python code to analyze 2 real application scenarios: a company's financial data, and candidates' election data.
+I wrote python code to analyze 2 real application scenarios: a company's financial data, and candidates' election data.
 
 ### Before reading the homework csv data files and coding in Python
 
@@ -17,7 +17,7 @@ In this homework assignment, I wrote python code to analyze 2 real application s
       -	An Analysis folder that contains the text file that will store the results from each analysis; financial_analysis.txt and election_analysis.txt, respectively.
     * I pushed these changes back to GitHub. 
 
-### Files including data used for analysis and the solution output
+### Files including data used for analysis, and the solution output text files
 
 * PyBank/Resources/budget_data.csv - Ran Python code on this PyBank assignment data to generate the final solution output.  
 * PyBank/Analysis/financial_analysis.txt is the final solution output for PyBank assignment.
@@ -32,18 +32,23 @@ In this homework assignment, I wrote python code to analyze 2 real application s
 * PyPoll/main.py - Ran this Python code to generate the final analysis and print the output for PyPoll assignment 
 
 ## Analysis Steps
+In the PyBank assignment we were tasked with creating a Python script to analyze the financial records of a company, and were given a financial dataset called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
+1. I created a Python script that analyzed the records to calculate each of the following values:
+	* The total number of months included in the dataset
+	* The net total amount of "Profit/Losses" over the entire period
+	* The changes in "Profit/Losses" over the entire period, and then the average of those changes
+	* The greatest increase in profits (date and amount) over the entire period
+	* The greatest decrease in profits (date and amount) over the entire period
+2. The final script printed the analysis output to the terminal and exported a text file with the results to the Analysis folder.
 
-1. Created a script that loops through all the stocks for one year and generated output for the following information:
-  	* The ticker symbol.
-  	* Yearly change from opening price at the beginning of a given year to the closing price at the end of that year.
-  	* The percent change from opening price at the beginning of a given year to the closing price at the end of that year.
-	* The total stock volume of the stock.
-
-2. Used conditional formatting that highlighted positive yearly change in green and negative yearly change in red.
-
-3. Added functionality to the script to return the stock ticker with the "Greatest % increase", "Greatest % decrease", and "Greatest total volume". 
-
-4. Made the appropriate adjustments to the VBA script to allow it to run on every worksheet (that is, every year) just by running the VBA script once.
+In this PyPoll assignment, we were tasked with helping a small/rural town modernize its vote-counting process and were given a set of poll data called election_data.csv. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". 
+1. I created a Python script that analyzed the votes and calculated each of the following values:
+	* The total number of votes cast
+	* A complete list of candidates who received votes
+	* The percentage of votes each candidate won
+	* The total number of votes each candidate won
+	* The winner of the election based on popular vote
+2. The final script printed the analysis output to the terminal and exported a text file with the results to the Analysis folder.
 
 ## References
 
