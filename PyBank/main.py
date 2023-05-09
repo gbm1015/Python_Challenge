@@ -1,6 +1,8 @@
+# Dependencies
 import os
 import csv
 
+# Identify path to csv data file for loading
 budget_data = os.path.join("Resources","budget_data.csv")
 
 # Lists to store data
@@ -43,7 +45,7 @@ month_year_greatest_increase_profit_loss_change = date[profit_loss_change.index(
 greatest_decrease_profit_loss_change = min(profit_loss_change)
 month_year_greatest_decrease_profit_loss_change = date[profit_loss_change.index(greatest_decrease_profit_loss_change)+1]
 
-#Set up output data to analysis folder
+#Identify path for output data to analysis folder
 output_file = os.path.join("Analysis","financial_analysis.txt")
 
 #Open the output file
